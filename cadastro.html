@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <script src="cadastro.js"></script>
+</head>
+<body>
+    <div class="conteudo">
+        
+        <div class="titulo">
+            <h1>Sobre você</h1>
+            <p>Fale um pouco sobre você! Você pode modificar suas informações pessoais aqui.</p>
+        </div>
+
+        <form name="cadastro" action="" method="post">
+            
+            <div class="linha-1 labels-pos">
+                <div class="coluna-1">
+                    <div class="label-container">
+                        <label for="nome" id="label-nome">Nome</label>
+                        <div class="mensagem help-msg">
+                            <p>Alguma informação sobre algo, realmente extenso. Ajudando usuario a conhecer do que se trata.</p>
+                        </div>
+                        <span class="help"><p>?</p></span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="ex: João" id="nome" autocomplete="off" onclick="nomeOgt(this)" onkeyup="nomeOgt(this)">
+                        <span class="icon-tam"><p class="icon">*</p></span>
+                        <p class="msgErro">Por favor, Digite seu nome</p>
+                    </div>
+                </div>
+
+                <div class="coluna-2">
+                    <label for="sobrenome">Sobrenome</label>
+                    <div class="input-container">
+                        <span class="icon-tam"><p class="icon">*</p></i></span>
+                        <input type="text" placeholder="ex: Silva" id="sobrenome" autocomplete="off" onclick="sobrenomeOgt(this)" onkeyup="sobrenomeOgt(this)">
+                        <p class="msgErro">Por favor, Digite seu sobrenome</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="linha-2 labels-pos">
+                <div class="coluna-1">
+                    <label for="passaporte">Passaporte</label>
+                    <div class="input-container">
+                        <input type="text" placeholder="ex: A9230442923" id="passaporte" autocomplete="off">
+                        <span class="icon-tam"><p class="icon">*</p></i></span>
+                    </div>
+                </div>
+
+                <div class="coluna-2">
+                    <label for="email">Email</label>
+                    <div class="input-container">
+                        <input type="email" placeholder="ex: joao.s@exemplo.com" id="email" name="email" autocomplete="off" onclick="emailOgt(this)" onkeyup="emailOgt(this)">
+                        <span class="icon-tam"><p class="icon">*</p></i></span>
+                        <p class="msgErro">Por favor, digite um endereço de email válido</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="linha-3 labels-pos">
+                <label for="nascimento">Data de nascimento</label>
+                <div class="coluna" id="nascimento">
+                    <div class="select-container" id="dia">
+                        <select name="dia" id="day" onclick="nascimentoOgt(this)">
+                            <option value="select" disabled selected>Dia</option>
+                        </select>
+                        <img src="assets/arrow/seta.png" alt="" class="seta">
+                    </div>
+                    <div class="select-container" id="mes">
+                        <select name="mes" id="month" onclick="nascimentoOgt(this)">
+                            <option value="select" disabled selected>Mês</option>
+                        </select>
+                        <img src="assets/arrow/seta.png" alt="" class="seta">
+                    </div>
+                    <div class="select-container" id="ano">
+                        <select name="ano" id="year" onclick="nascimentoOgt(this)">
+                            <option value="select" disabled selected>Ano</option>  
+                        </select>
+                        <img src="assets/arrow/seta.png" alt="" class="seta">
+                    </div>
+                </div>
+                <p class="msgErro">Por favor, digite uma data de nascimento válida</p>
+            </div>
+            
+            <div class="linha-4 labels-pos">
+                <label for="idioma">Idioma</label>
+                <div class="input-container">
+                    <input type="text" placeholder="ex: Português" id="idioma" onclick="idiomaOgt(this)" onkeyup="idiomaOgt(this)">
+                    <span class="icon-tam"><p class="icon">*</p></i></span>
+                    <p class="msgErro">Por favor, digite seu idioma</p>
+                </div>
+            </div>
+
+            <div class="linha-5 labels-pos">
+
+                <div class="coluna-1">
+                    <label for="pais">País de residencia</label>
+                    <div class="input-container">
+                        <input type="text" placeholder="ex: Brasil" id="pais">
+                        <span class="icon-tam"><p class="icon">*</p></i></span>
+                    </div>
+                </div>
+                
+                <div class="coluna-2">
+                    <label for="nacionalidade">Nacionalidade</label>
+                    <div class="input-container">
+                        <input type="text" placeholder="ex: Brasileiro" id="nacionalidade">
+                        <span class="icon-tam"><p class="icon">*</p></i></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="linha-6 labels-pos">
+                <label for="endereco">Endereço</label>
+                <div class="input-container">
+                    <input type="text" placeholder="ex: Rua José Silva" id="endereco">
+                    <span class="icon-tam"><p class="icon">*</p></i></span>
+                </div>
+            </div>
+
+            <div class="linha-7 labels-pos">
+                <div class="coluna-1">
+                    <label for="telefone">Contato</label>
+                    <div class="input-container">
+                        <input type="text" placeholder="ex: (XX) XXXXX XXXX" id="telefone" name="telefone"  maxlength="15" autocomplete="off" onclick="telefoneOgt(this)" onkeyup="telefoneOgt(this)">
+                        <span class="icon-tam"><p class="icon">*</p></i></span>
+                        <p class="msgErro">Por favor, digite um número de telefone válido</p>
+                    </div>
+                </div>
+
+                <div class="coluna-2">
+                    <label for="email-corp">Email Corporativo</label>
+                    <div class="input-container">
+                        <input type="email" placeholder="ex: joao.s@empresa.net" id="email-corp">
+                        <span class="icon-tam"><p class="icon">*</p></i></span>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="linha-8">
+                <div class="coluna-3">
+                    <input type="file" accept="image/*" id="selecionar" onchange="carregarFoto(event)">
+                    <label for="selecionar">Selecionar foto</label>
+                    <label class="deletar" onclick="deletarFoto(event)">Deletar foto</label>
+                </div>
+                <div class="coluna-4">
+                    <img src="assets/users/user.png" alt="foto user" id="output">
+                </div>
+
+                <div class="coluna-5 mensagem">
+                    <p>JPEG, PNG, GIF OU BMP - limite de arquivo 5MB, resolução min. 250x250 pixels</p>
+                </div>
+            </div>
+
+            <div class="salvar">
+                <button type="submit" id="submit" onclick="validar(this)">Salvar</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

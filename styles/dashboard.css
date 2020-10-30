@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(119, 119, 119);
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    background-color: rgb(40,154,231);
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.menu .titulo-lista a{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+}
+
+.opcoes {
+    float: right;
+    padding: 10px 40px;
+    color: rgb(34, 129, 192);
+}
+
+.opcoes a {
+    color: rgb(34, 129, 192);
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin: 0 10px;
+    padding: 10px 10px 10px 30px;
+}
+
+.opcoes i {
+    position: absolute;
+    margin-left: 20px;
+}
+
+table {
+    width: 95%;
+    height: auto;
+    text-align: left;
+    margin-left: 50px;
+    border-collapse: collapse;
+}
+
+th {
+    width: 100px;
+    height: auto;
+    border-bottom: 4px rgb(204, 204, 204) solid;
+}
+
+tr {
+    height: 120px;
+}
+
+tr td{
+    border-bottom: 2px rgb(204, 204, 204) solid;
+}
+
+tr td img{
+    width: 100px;
+    border-radius: 50px;
+    margin-right: 30px;
+}
+
+.id, .title {
+    padding-left: 30px;
+}
+
+.nome > div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.ponto-verde {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(0, 128, 0);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.ponto-vermelho {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.ponto-alaranjado {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 218, 7);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+.fa-cog {
+    color: rgb(40,154,231);
+    padding-right: 20px;
+}
+
+.fa-times-circle {
+    color: rgb(231, 40, 40);
+    padding-left: 10px;
+}
+
+hr {
+    border: 0;
+    border-bottom: solid;
+}
+
+.texto {
+    float: left;
+    margin: 50px;
+}
+
+.paginas {
+    float: right;
+    padding: 35px 50px 0 0;
+}
+
+.paginas ul {
+    display: flex;
+}
+
+.paginas li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numb {
+    align-items:  center;
+    width: 50px;
+    height: 50px;
+}
+
+.azul{
+    color: rgb(255, 255, 255);
+    background-color: rgb(40,154,231);
+    border-radius: 4px;
+}

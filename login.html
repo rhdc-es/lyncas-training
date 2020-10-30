@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="login.js"></script>
+</head>
+<body>    
+
+    <div id="container">
+        <form action="dashboard.html" method="POST">
+
+            <div class="conteudo">
+                <h1>LOGIN</h1>
+            </div>
+
+            <div class="warning">
+                <p>Usuário ou senha inválidos!</p>
+            </div>
+            
+            <div class="conteudo">
+                <div for="" class="input">
+                    <i class="fa fa-envelope icon"></i>
+                    <input type="text" id="email" placeholder="Email" autocomplete="off" required>
+                </div>
+            </div>
+    
+            <div class="conteudo">
+                <div class="input">
+                    <i class="fa fa-lock icon"></i>
+                    <input type="password" id="password" placeholder="Password" autocomplete="off" required>
+                </div>
+            </div>
+    
+            <div class="conteudo">
+                <input type="checkbox" name="remember" class="checkbox">
+                <label for="remember" class="checkbox">Remember me</label>
+            </div>
+    
+            <div class="conteudo">
+                <button type="submit">Login</button>
+            </div>
+    
+            <div class="conteudo">
+                <p>Or login with</p>
+            </div>
+    
+            <div class="conteudo">
+                <ul>
+                    <li>
+                        <img src="assets/logos/logo-facebook.png" alt="logo-facebook">
+                        <span><a href="https://pt-br.facebook.com/" id="facebook">Facebook</a></span>
+                    </li>
+                    <li>
+                        <img src="assets/logos/logo-google.png" alt="logo-google">
+                        <span><a href="https://www.google.com/gmail/" id="google">Google</a></span>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="conteudo">
+                <p>Not a member? <a href="#">Sign up now</a></p>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

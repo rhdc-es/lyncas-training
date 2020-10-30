@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <script src="dashboard.js"></script>
+</head>
+<body>
+    
+    <div class="conteudo">
+
+        <div class="menu">
+            <ul>
+                <li class="titulo-lista"><a href="#">User <b>Management</b></a></li>
+    
+                <div class="opcoes">
+                    <i class="fa fa-copy"></i>
+                    <li class="opcao esquerda"><a href="#">Export to Exel</a></li>
+                    <i class="fa fa-plus-circle"></i>
+                    <li class="opcao direita"><a href="cadastro.html">Add New User</a></li>
+                </div>
+            </ul>
+        </div>
+    
+        <div class="conteudo">
+            <table>
+                    <tr id="titulo-tabela">
+                        <th class="title">#</th>
+                        <th>Name</th>
+                        <th>Data Created</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                
+                    
+                    <tr class="user">
+                        <td class="id"></td>
+                        <td class="nome">
+                            <div>
+                                <img src="assets/users/1.jpg" alt="" class="img"> 
+                                <p></p>
+                            </div>
+                        </td>
+                        <td class="dataAdm"></td>
+                        <td class="cargo"></td>
+                        <td class="presenca"></td>
+                        <td><span class="icon"><i class="fa fa-cog"></i><i class="fa fa-times-circle" onclick="excluir(this)"></i></span></td>
+                    </tr>
+                
+                
+                    
+                    <tr class="user">
+                        <td class="id"></td>
+                        <td class="nome">
+                            <div>
+                                <img src="assets/users/1.jpg" alt="" class="img">
+                                <p></p>
+                            </div>
+                        </td>
+                        <td class="dataAdm"></td>
+                        <td class="cargo"></td>
+                        <td class="presenca"></td>
+                        <td><span class="icon"><i class="fa fa-cog"></i><i class="fa fa-times-circle" onclick="excluir(this)"></i></span></td>
+                    </tr>
+                
+                
+                    
+                    <tr class="user">
+                        <td class="id"></td>
+                        <td class="nome">
+                            <div>
+                                <img src="assets/users/1.jpg" alt="" class="img">
+                            <p></p>
+                            </div>
+                        </td>
+                        <td class="dataAdm"></td>
+                        <td class="cargo"></td>
+                        <td class="presenca"></td>
+                        <td><span class="icon"><i class="fa fa-cog"></i><i class="fa fa-times-circle" onclick="excluir(this)"></i></span></td>
+                    </tr>
+                
+                
+                    
+                    <tr class="user">
+                        <td class="id"></td>
+                        <td class="nome">
+                            <div>
+                                <img src="assets/users/1.jpg" alt="" class="img">
+                                <p></p>
+                            </div>
+                        </td>
+                        <td class="dataAdm"></td>
+                        <td class="cargo"></td>
+                        <td class="presenca"></td>
+                        <td><span class="icon"><i class="fa fa-cog"></i><i class="fa fa-times-circle" onclick="excluir(this)"></i></span></td>
+                    </tr>
+                
+                
+                    
+                    <tr class="user">
+                        <td class="id"></td>
+                        <td class="nome">
+                            <div>
+                                <img src="assets/users/1.jpg" alt="" class="img">
+                                <p></p>
+                            </div>
+                        </td>
+                        <td class="dataAdm"></td>
+                        <td class="cargo"></td>
+                        <td class="presenca"></td>
+                        <td><span class="icon"><i class="fa fa-cog"></i><i class="fa fa-times-circle" onclick="excluir(this)"></i></span></td>
+                    </tr>
+                
+            </table>
+        </div>
+        <div class="texto">
+            <p>Showing <b>5</b> out of <b>25</b> entries</p>
+        </div>
+
+        <div class="paginas">
+            <ul>
+                <li class="letras">Previous</li>
+                <li class="numb">1</li>
+                <li class="numb">2</li>
+                <li class="numb azul">3</li>
+                <li class="numb">4</li>
+                <li class="numb">5</li>
+                <li class="letras">Next</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

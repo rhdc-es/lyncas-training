@@ -21,14 +21,23 @@ body {
     margin: 0 auto;
 }
 
-.conteudo h1 {
-    margin-bottom: 10px;
-}
-
 .titulo {
     background-color: rgb(250, 250, 250);
     padding: 20px;
     border: 1px solid rgb(215,216,216);
+}
+
+.titulo > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.titulo > div > span {
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
 }
 
 form {

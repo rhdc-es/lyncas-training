@@ -12,7 +12,10 @@
     <div class="conteudo">
         
         <div class="titulo">
-            <h1>Sobre você</h1>
+            <div>
+                <h1>Sobre você</h1>
+                <span><i class="fa fa-address-card" onClick="window.location='dashboard.html';" value="Acessar Dashboard"><a href="dashboard.html"></a></i></span>
+            </div>
             <p>Fale um pouco sobre você! Você pode modificar suas informações pessoais aqui.</p>
         </div>
 
@@ -28,7 +31,7 @@
                         <span class="help"><p>?</p></span>
                     </div>
                     <div class="input-container">
-                        <input type="text" placeholder="ex: João" id="nome" autocomplete="off" onclick="nomeOgt(this)" onkeyup="nomeOgt(this)">
+                        <input type="text" placeholder="ex: João" id="nome" class="verificar" autocomplete="off">
                         <span class="icon-tam"><p class="icon">*</p></span>
                         <p class="msgErro">Por favor, Digite seu nome</p>
                     </div>
@@ -38,7 +41,7 @@
                     <label for="sobrenome">Sobrenome</label>
                     <div class="input-container">
                         <span class="icon-tam"><p class="icon">*</p></i></span>
-                        <input type="text" placeholder="ex: Silva" id="sobrenome" autocomplete="off" onclick="sobrenomeOgt(this)" onkeyup="sobrenomeOgt(this)">
+                        <input type="text" placeholder="ex: Silva" id="sobrenome" class="verificar" autocomplete="off">
                         <p class="msgErro">Por favor, Digite seu sobrenome</p>
                     </div>
                 </div>
@@ -46,9 +49,9 @@
 
             <div class="linha-2 labels-pos">
                 <div class="coluna-1">
-                    <label for="passaporte">Passaporte</label>
+                    <label for="senha">Senha</label>
                     <div class="input-container">
-                        <input type="text" placeholder="ex: A9230442923" id="passaporte" autocomplete="off">
+                        <input type="password" placeholder="ex: A9230442923" id="senha" autocomplete="off">
                         <span class="icon-tam"><p class="icon">*</p></i></span>
                     </div>
                 </div>
@@ -56,7 +59,7 @@
                 <div class="coluna-2">
                     <label for="email">Email</label>
                     <div class="input-container">
-                        <input type="email" placeholder="ex: joao.s@exemplo.com" id="email" name="email" autocomplete="off" onclick="emailOgt(this)" onkeyup="emailOgt(this)">
+                        <input type="email" placeholder="ex: joao.s@exemplo.com" id="email" class="verificar" autocomplete="off">
                         <span class="icon-tam"><p class="icon">*</p></i></span>
                         <p class="msgErro">Por favor, digite um endereço de email válido</p>
                     </div>
@@ -67,19 +70,19 @@
                 <label for="nascimento">Data de nascimento</label>
                 <div class="coluna" id="nascimento">
                     <div class="select-container" id="dia">
-                        <select name="dia" id="day" onclick="nascimentoOgt(this)">
+                        <select name="dia" id="day" class="verificar">
                             <option value="select" disabled selected>Dia</option>
                         </select>
                         <img src="assets/arrow/seta.png" alt="" class="seta">
                     </div>
                     <div class="select-container" id="mes">
-                        <select name="mes" id="month" onclick="nascimentoOgt(this)">
+                        <select name="mes" id="month" class="verificar">
                             <option value="select" disabled selected>Mês</option>
                         </select>
                         <img src="assets/arrow/seta.png" alt="" class="seta">
                     </div>
                     <div class="select-container" id="ano">
-                        <select name="ano" id="year" onclick="nascimentoOgt(this)">
+                        <select name="ano" id="year" class="verificar">
                             <option value="select" disabled selected>Ano</option>  
                         </select>
                         <img src="assets/arrow/seta.png" alt="" class="seta">
@@ -91,7 +94,7 @@
             <div class="linha-4 labels-pos">
                 <label for="idioma">Idioma</label>
                 <div class="input-container">
-                    <input type="text" placeholder="ex: Português" id="idioma" onclick="idiomaOgt(this)" onkeyup="idiomaOgt(this)">
+                    <input type="text" placeholder="ex: Português" id="idioma" class="verificar" autocomplete="off">
                     <span class="icon-tam"><p class="icon">*</p></i></span>
                     <p class="msgErro">Por favor, digite seu idioma</p>
                 </div>
@@ -102,15 +105,15 @@
                 <div class="coluna-1">
                     <label for="pais">País de residencia</label>
                     <div class="input-container">
-                        <input type="text" placeholder="ex: Brasil" id="pais">
+                        <input type="text" placeholder="ex: Brasil" id="pais" autocomplete="off">
                         <span class="icon-tam"><p class="icon">*</p></i></span>
                     </div>
                 </div>
                 
                 <div class="coluna-2">
-                    <label for="nacionalidade">Nacionalidade</label>
+                    <label for="nacio">Nacionalidade</label>
                     <div class="input-container">
-                        <input type="text" placeholder="ex: Brasileiro" id="nacionalidade">
+                        <input type="text" placeholder="ex: Brasileiro" id="nacio" autocomplete="off">
                         <span class="icon-tam"><p class="icon">*</p></i></span>
                     </div>
                 </div>
@@ -120,7 +123,7 @@
             <div class="linha-6 labels-pos">
                 <label for="endereco">Endereço</label>
                 <div class="input-container">
-                    <input type="text" placeholder="ex: Rua José Silva" id="endereco">
+                    <input type="text" placeholder="ex: Rua José Silva" id="endereco" autocomplete="off">
                     <span class="icon-tam"><p class="icon">*</p></i></span>
                 </div>
             </div>
@@ -129,16 +132,16 @@
                 <div class="coluna-1">
                     <label for="telefone">Contato</label>
                     <div class="input-container">
-                        <input type="text" placeholder="ex: (XX) XXXXX XXXX" id="telefone" name="telefone"  maxlength="15" autocomplete="off" onclick="telefoneOgt(this)" onkeyup="telefoneOgt(this)">
+                        <input type="text" placeholder="ex: (XX) XXXXX XXXX" id="telefone" class="verificar" maxlength="15" autocomplete="off" onclick="mascaraTel(this)" onkeyup="mascaraTel(this)">
                         <span class="icon-tam"><p class="icon">*</p></i></span>
                         <p class="msgErro">Por favor, digite um número de telefone válido</p>
                     </div>
                 </div>
 
                 <div class="coluna-2">
-                    <label for="email-corp">Email Corporativo</label>
+                    <label for="email-corp">Role(Cargo)</label>
                     <div class="input-container">
-                        <input type="email" placeholder="ex: joao.s@empresa.net" id="email-corp">
+                        <input type="text" id="cargo" class="verificar" placeholder="ex: Gerente Administrativo">
                         <span class="icon-tam"><p class="icon">*</p></i></span>
                     </div>
                 </div>
@@ -160,7 +163,7 @@
             </div>
 
             <div class="salvar">
-                <button type="submit" id="submit" onclick="validar(this)">Salvar</button>
+                <button type="submit" id="submit" onclick="validar(event)">Salvar</button>
             </div>
 
         </form>

@@ -32,8 +32,9 @@ a {
 
 .opcoes {
     float: right;
-    padding: 10px 40px;
+    margin: 10px 40px;
     color: rgb(34, 129, 192);
+    cursor: pointer;
 }
 
 .opcoes a {
@@ -53,7 +54,7 @@ table {
     width: 95%;
     height: auto;
     text-align: left;
-    margin-left: 50px;
+    margin: 0 auto;
     border-collapse: collapse;
 }
 
@@ -120,7 +121,7 @@ tr td img{
 
 .fa-cog {
     color: rgb(40,154,231);
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .fa-times-circle {
@@ -163,4 +164,19 @@ hr {
     color: rgb(255, 255, 255);
     background-color: rgb(40,154,231);
     border-radius: 4px;
+}
+
+.fa {
+    cursor: pointer;
+}
+
+.status {
+    color: rgb(119, 119, 119);
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    border-style: none;
+}
+
+.status:focus {
+    border: none;
 }

@@ -9,7 +9,7 @@
     <script src="dashboard.js"></script>
 </head>
 <body>
-    
+
     <div class="conteudo">
 
         <div class="menu">
@@ -20,12 +20,15 @@
                     <i class="fa fa-copy"></i>
                     <li class="opcao esquerda"><a href="#">Export to Exel</a></li>
                     <i class="fa fa-plus-circle"></i>
-                    <li class="opcao direita"><a href="cadastro.html">Add New User</a></li>
+                    <li class="opcao meio"><a href="cadastro.html">Add New User</a></li>
+                    <i class="fa fa-close"></i>
+                    <li class="opcao direita"><a onclick="exit(this)">Exit</a></li>
                 </div>
             </ul>
         </div>
-    
+
         <div class="conteudo">
+            
             <table>
                     <tr id="titulo-tabela">
                         <th class="title">#</th>
@@ -35,86 +38,7 @@
                         <th>Status</th>
                         <th>Action</th>
                     </tr>
-                
-                    
-                    <tr class="user">
-                        <td class="id"></td>
-                        <td class="nome">
-                            <div>
-                                <img src="assets/users/1.jpg" alt="" class="img"> 
-                                <p></p>
-                            </div>
-                        </td>
-                        <td class="dataAdm"></td>
-                        <td class="cargo"></td>
-                        <td class="presenca"></td>
-                        <td><span class="icon"><i class="fa fa-cog"></i><i class="fa fa-times-circle" onclick="excluir(this)"></i></span></td>
-                    </tr>
-                
-                
-                    
-                    <tr class="user">
-                        <td class="id"></td>
-                        <td class="nome">
-                            <div>
-                                <img src="assets/users/1.jpg" alt="" class="img">
-                                <p></p>
-                            </div>
-                        </td>
-                        <td class="dataAdm"></td>
-                        <td class="cargo"></td>
-                        <td class="presenca"></td>
-                        <td><span class="icon"><i class="fa fa-cog"></i><i class="fa fa-times-circle" onclick="excluir(this)"></i></span></td>
-                    </tr>
-                
-                
-                    
-                    <tr class="user">
-                        <td class="id"></td>
-                        <td class="nome">
-                            <div>
-                                <img src="assets/users/1.jpg" alt="" class="img">
-                            <p></p>
-                            </div>
-                        </td>
-                        <td class="dataAdm"></td>
-                        <td class="cargo"></td>
-                        <td class="presenca"></td>
-                        <td><span class="icon"><i class="fa fa-cog"></i><i class="fa fa-times-circle" onclick="excluir(this)"></i></span></td>
-                    </tr>
-                
-                
-                    
-                    <tr class="user">
-                        <td class="id"></td>
-                        <td class="nome">
-                            <div>
-                                <img src="assets/users/1.jpg" alt="" class="img">
-                                <p></p>
-                            </div>
-                        </td>
-                        <td class="dataAdm"></td>
-                        <td class="cargo"></td>
-                        <td class="presenca"></td>
-                        <td><span class="icon"><i class="fa fa-cog"></i><i class="fa fa-times-circle" onclick="excluir(this)"></i></span></td>
-                    </tr>
-                
-                
-                    
-                    <tr class="user">
-                        <td class="id"></td>
-                        <td class="nome">
-                            <div>
-                                <img src="assets/users/1.jpg" alt="" class="img">
-                                <p></p>
-                            </div>
-                        </td>
-                        <td class="dataAdm"></td>
-                        <td class="cargo"></td>
-                        <td class="presenca"></td>
-                        <td><span class="icon"><i class="fa fa-cog"></i><i class="fa fa-times-circle" onclick="excluir(this)"></i></span></td>
-                    </tr>
-                
+
             </table>
         </div>
         <div class="texto">
@@ -133,6 +57,6 @@
             </ul>
         </div>
     </div>
-
+    
 </body>
 </html>
